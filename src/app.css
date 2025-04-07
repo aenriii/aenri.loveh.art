@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+@import "tailwindcss";
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@media only screen and (max-width: 767px) {
+    :root {
+        --host-width: 95vw;
+        --host-height: 95vh;
+        --host-padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        --host-width: 95vw;
+        --host-height: 95vh;
+        --host-padding: 3rem;
+    }
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    width: fit-content;
+    height: fit-content;
+    background: #000000;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Fira Code", monospace;
+    --text: #ffffff;
+    --subtext: #cccccc;
+    --subtext-variant: #aaaaaa;
+}
+
+.cbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
