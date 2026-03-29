@@ -72,9 +72,24 @@
 					<span class="rounded-lg border border-border bg-surface-2 px-3 py-1.5 text-xs text-dusk"
 						>openrx.info going live soon</span
 					>
-					<span class="rounded-lg border border-border bg-surface-2 px-3 py-1.5 text-xs text-dusk"
-						>codeberg / github coming soon</span
-					>
+                   	<a
+                        href="https://codeberg.org/OpenRx/openrx.info"
+                        target="_blank"
+                        rel="noopener noreferrer"
+             			aria-label="codeberg repo for openrx.info"
+                        class="rounded-lg border border-lavender/25 bg-lavender/10 px-3 py-1.5 text-xs font-medium text-lavender transition-colors hover:bg-lavender/20"
+                   	>
+                        codeberg
+                   	</a>
+                   	<a
+                        href="https://github.com/Open-Rx/openrx.info"
+                        target="_blank"
+                       	rel="noopener noreferrer"
+             			aria-label="github repo for openrx.info"
+                       	class="rounded-lg border border-lavender/25 bg-lavender/10 px-3 py-1.5 text-xs font-medium text-lavender transition-colors hover:bg-lavender/20"
+                   	>
+                        github
+                   	</a>
 					<span class="rounded-lg border border-border bg-surface-2 px-3 py-1.5 text-xs text-dusk"
 						>opencollective coming soon</span
 					>
