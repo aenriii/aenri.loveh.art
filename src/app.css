@@ -1,16 +1,22 @@
 @import 'tailwindcss';
 
+@layer base {
+	body {
+		font-weight: 450;
+	}
+}
 
 @theme {
 	--font-sans: 'DM Sans', system-ui, sans-serif;
 	--font-display: 'Space Grotesk', system-ui, sans-serif;
 
-	--color-night: hsl(246, 81%, 3%);
-	--color-surface: hsl(247, 70%, 7%);
-	--color-surface-2: hsl(248, 55%, 11%);
-	--color-border: hsl(246, 40%, 19%);
-	--color-lavender: hsl(258, 100%, 76%);
-	--color-petal: hsl(324, 80%, 70%);
-	--color-dusk: hsl(242, 22%, 53%);
-	--color-mist: hsl(239, 78%, 94%);
+	--color-night: #11111b;    
+	--color-surface: #181825;  
+	--color-surface-2: #1e1e2e; 
+	--color-border: #313244;   
+	--color-lavender: #b4befe; 
+	--color-petal: #f5c2e7;    
+	--color-dusk: #a6adc8;     
+	--color-subtle: #bac2de;   
+	--color-mist: #cdd6f4;     
 }

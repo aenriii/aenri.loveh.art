@@ -1,33 +1,42 @@
-<section>
+<section aria-label="projects">
 	<h2 class="mb-5 font-display text-2xl font-semibold text-mist">projects</h2>
 
 	<!-- css-only tabs via radio + flex order; inputs/labels/panels must stay as direct flex children -->
-	<div class="flex flex-wrap">
-		<input type="radio" name="project-tab" id="tab-openrx" class="peer/openrx hidden" checked />
-		<input type="radio" name="project-tab" id="tab-dev" class="peer/dev hidden" />
-		<input type="radio" name="project-tab" id="tab-other" class="peer/other hidden" />
+	<div class="flex flex-wrap" role="tablist" aria-label="project categories">
+		<input type="radio" name="project-tab" id="tab-openrx" class="peer/openrx hidden" checked aria-hidden="true" />
+		<input type="radio" name="project-tab" id="tab-dev" class="peer/dev hidden" aria-hidden="true" />
+		<input type="radio" name="project-tab" id="tab-other" class="peer/other hidden" aria-hidden="true" />
 		<label
 			for="tab-openrx"
+			role="tab"
+			tabindex="0"
+			aria-controls="panel-openrx"
 			class="order-1 cursor-pointer select-none border-b-2 border-transparent px-4 py-2.5 font-display text-xs font-medium text-dusk transition-colors duration-150 hover:text-mist sm:text-sm peer-checked/openrx:border-lavender peer-checked/openrx:text-lavender"
 		>
 			openrx
 		</label>
 		<label
 			for="tab-dev"
+			role="tab"
+			tabindex="0"
+			aria-controls="panel-dev"
 			class="order-2 cursor-pointer select-none border-b-2 border-transparent px-4 py-2.5 font-display text-xs font-medium text-dusk transition-colors duration-150 hover:text-mist sm:text-sm peer-checked/dev:border-lavender peer-checked/dev:text-lavender"
 		>
 			development
 		</label>
 		<label
 			for="tab-other"
+			role="tab"
+			tabindex="0"
+			aria-controls="panel-other"
 			class="order-3 cursor-pointer select-none border-b-2 border-transparent px-4 py-2.5 font-display text-xs font-medium text-dusk transition-colors duration-150 hover:text-mist sm:text-sm peer-checked/other:border-lavender peer-checked/other:text-lavender"
 		>
 			other projects
 		</label>
 
-		<div class="order-4 mb-6 w-full border-b border-border"></div>
+		<div class="order-4 mb-6 w-full border-b border-border" aria-hidden="true"></div>
 
-		<div class="order-5 hidden w-full peer-checked/openrx:block">
+		<div id="panel-openrx" role="tabpanel" aria-labelledby="tab-openrx" class="order-5 hidden w-full peer-checked/openrx:block">
 			<div class="space-y-4 rounded-2xl border border-border bg-surface p-5 sm:p-6">
 				<div class="flex flex-wrap items-start justify-between gap-3">
 					<div>
@@ -36,7 +45,7 @@
 					</div>
 					<span
 						class="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-2.5 py-1 font-display text-xs font-medium text-emerald-400"
-						>● active</span
+						aria-label="status: active"><span aria-hidden="true">● </span>active</span
 					>
 				</div>
 				<p class="text-sm leading-relaxed text-dusk">
@@ -70,13 +79,13 @@
 						>opencollective coming soon</span
 					>
 				</div>
-				<p class="text-xs italic text-lavender/60">
+				<p class="text-xs italic text-lavender">
 					contributions always welcome - reach out via matrix or signal
 				</p>
 			</div>
 		</div>
 
-		<div class="order-6 hidden w-full peer-checked/dev:block">
+		<div id="panel-dev" role="tabpanel" aria-labelledby="tab-dev" class="order-6 hidden w-full peer-checked/dev:block">
 			<div class="grid gap-5 sm:grid-cols-2">
 				<!-- Genesis -->
 				<div class="space-y-4 rounded-2xl border border-border bg-surface p-5 sm:p-6">
@@ -87,7 +96,7 @@
 						</div>
 						<span
 							class="rounded-full border border-amber-500/20 bg-amber-500/10 px-2.5 py-1 font-display text-xs font-medium text-amber-400"
-							>○ paused</span
+							aria-label="status: paused"><span aria-hidden="true">○ </span>paused</span
 						>
 					</div>
 					<p class="text-sm leading-relaxed text-dusk">
@@ -100,7 +109,7 @@
 						architecture for truly secure chat
 					</p>
 
-					<p class="text-xs italic text-dusk/60">
+					<p class="text-xs italic text-subtle">
 						contributions, help, or feature bounties appreciated !
 					</p>
 				</div>
@@ -114,7 +123,7 @@
 						</div>
 						<span
 							class="rounded-full border border-amber-500/20 bg-amber-500/10 px-2.5 py-1 font-display text-xs font-medium text-amber-400"
-							>○ paused</span
+							aria-label="status: paused"><span aria-hidden="true">○ </span>paused</span
 						>
 					</div>
 					<p class="text-sm leading-relaxed text-dusk">
@@ -126,14 +135,14 @@
 						own their music locally
 					</p>
 
-					<p class="text-xs italic text-dusk/60">
+					<p class="text-xs italic text-subtle">
 					    contributions, help, or feature bounties appreciated !
 					</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="order-7 hidden w-full peer-checked/other:block">
+		<div id="panel-other" role="tabpanel" aria-labelledby="tab-other" class="order-7 hidden w-full peer-checked/other:block">
 			<div class="space-y-4 rounded-2xl border border-border bg-surface p-5 sm:p-6">
 				<div class="flex flex-wrap items-start justify-between gap-3">
 					<div>
@@ -142,7 +151,7 @@
 					</div>
 					<span
 						class="rounded-full border border-sky-500/20 bg-sky-500/10 px-2.5 py-1 font-display text-xs font-medium text-sky-400"
-						>◇ concept</span
+						aria-label="status: concept"><span aria-hidden="true">◇ </span>concept</span
 					>
 				</div>
 				<p class="text-sm leading-relaxed text-dusk">

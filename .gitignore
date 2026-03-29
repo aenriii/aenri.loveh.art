@@ -1,4 +1,6 @@
 node_modules
+.claude
+scratch.md
 
 # Output
 .output

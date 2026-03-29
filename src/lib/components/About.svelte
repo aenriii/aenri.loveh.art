@@ -29,7 +29,7 @@
 
 <div class="space-y-5">
 	<div class="grid">
-		<div class="card-concept space-y-3 rounded-2xl border border-border bg-surface p-5" style="grid-area: 1 / 1">
+		<div class="card-concept space-y-3 rounded-2xl border border-border bg-surface p-5" style="grid-area: 1 / 1" aria-label="definition of aenri (concept)">
 			<div class="flex items-baseline gap-2">
 				<span class="font-display text-lg font-semibold text-mist">aenri</span>
 				<span class="text-xs italic text-dusk">/ noun</span>
@@ -44,7 +44,7 @@
 			</p>
 		</div>
 
-		<div class="card-lovehart space-y-3 rounded-2xl border border-border bg-surface p-5" style="grid-area: 1 / 1">
+		<div class="card-lovehart space-y-3 rounded-2xl border border-border bg-surface p-5" style="grid-area: 1 / 1" aria-label="introduction from aenri lovehart">
 			<div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
 				<span class="font-display text-lg font-semibold text-mist">aenri lovehart</span>
 				<span class="font-display text-xs text-lavender">pup / it</span>
