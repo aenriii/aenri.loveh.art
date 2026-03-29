@@ -45,7 +45,7 @@
 					</div>
 					<span
 						class="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-2.5 py-1 font-display text-xs font-medium text-emerald-400"
-						aria-label="status: active"><span aria-hidden="true">● </span>active</span
+						aria-label="status: active"><span aria-hidden="true">● </span> active</span
 					>
 				</div>
 				<p class="text-sm leading-relaxed text-dusk">
@@ -111,7 +111,7 @@
 						</div>
 						<span
 							class="rounded-full border border-amber-500/20 bg-amber-500/10 px-2.5 py-1 font-display text-xs font-medium text-amber-400"
-							aria-label="status: paused"><span aria-hidden="true">○ </span>paused</span
+							aria-label="status: paused"><span aria-hidden="true">○ </span> paused</span
 						>
 					</div>
 					<p class="text-sm leading-relaxed text-dusk">
@@ -138,7 +138,7 @@
 						</div>
 						<span
 							class="rounded-full border border-amber-500/20 bg-amber-500/10 px-2.5 py-1 font-display text-xs font-medium text-amber-400"
-							aria-label="status: paused"><span aria-hidden="true">○ </span>paused</span
+							aria-label="status: paused"><span aria-hidden="true">○ </span> paused</span
 						>
 					</div>
 					<p class="text-sm leading-relaxed text-dusk">
@@ -166,7 +166,7 @@
 					</div>
 					<span
 						class="rounded-full border border-sky-500/20 bg-sky-500/10 px-2.5 py-1 font-display text-xs font-medium text-sky-400"
-						aria-label="status: concept"><span aria-hidden="true">◇ </span>concept</span
+						aria-label="status: concept"><span aria-hidden="true">◇ </span>  concept</span
 					>
 				</div>
 				<p class="text-sm leading-relaxed text-dusk">
