@@ -33,15 +33,15 @@
 		aria-hidden="true"
 	></div>
 
-	<div class="relative mx-auto max-w-2xl px-5 py-16">
+	<main class="relative mx-auto max-w-2xl px-5 py-16">
 		<a href="/blog" class="mb-10 inline-flex items-center gap-2 text-sm text-dusk hover:text-mist">
-			&larr; all posts
+			<span aria-hidden="true">&larr;</span> all posts
 		</a>
 
 		<article>
 			<header class="mb-10">
 				<h1 class="font-display text-3xl font-bold text-mist">{title}</h1>
-				<time class="mt-2 block text-sm text-dusk">{formatted}</time>
+				<time class="mt-2 block text-sm text-dusk" datetime={date}>{formatted}</time>
 				{#if description}
 					<p class="mt-4 text-dusk">{description}</p>
 				{/if}
@@ -51,7 +51,7 @@
 				{@render children?.()}
 			</div>
 		</article>
-	</div>
+	</main>
 
 	<Footer />
 </div>

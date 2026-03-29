@@ -29,9 +29,9 @@
 		aria-hidden="true"
 	></div>
 
-	<div class="relative mx-auto max-w-2xl px-5 py-16">
+	<main class="relative mx-auto max-w-2xl px-5 py-16">
 		<a href="/" class="mb-10 inline-flex items-center gap-2 text-sm text-dusk hover:text-mist">
-			&larr; home
+			<span aria-hidden="true">&larr;</span> home
 		</a>
 
 		<h1 class="font-display mb-10 text-3xl font-bold">blog</h1>
@@ -43,7 +43,7 @@
 				{#each data.posts as post (post.slug)}
 					<li>
 						<a href="/blog/{post.slug}" class="group block">
-							<time class="text-xs text-dusk">
+							<time class="text-xs text-dusk" datetime={post.date}>
 								{new Date(post.date).toLocaleDateString('en-US', {
 									year: 'numeric',
 									month: 'long',
@@ -63,7 +63,7 @@
 				{/each}
 			</ul>
 		{/if}
-	</div>
+	</main>
 
 	<Footer />
 </div>
