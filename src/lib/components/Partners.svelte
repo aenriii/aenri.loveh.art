@@ -11,7 +11,7 @@
 	    asahi
 	</a>
 	<a
-    	href="signal:kwzu.01"
+    	href="https://signal.me/#eu/PbhayvoMAS1hXKVcBBRnDM0HNb4n5mkfefBQDXLIfTBfoUbiajVAYotZC0-M6qwg"
 		aria-label="lexi on signal"
     	class="rounded-lg border border-lavender/25 bg-lavender/10 px-3 py-1.5 text-xs font-medium text-lavender transition-colors hover:bg-lavender/20"
 	>
