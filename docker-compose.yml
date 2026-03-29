@@ -1,0 +1,11 @@
+services:
+  aenrisite:
+    build: .
+    container_name: aenri.loveh.art
+    restart: unless-stopped
+    networks:
+      - caddy
+
+networks:
+  caddy:
+    external: true
