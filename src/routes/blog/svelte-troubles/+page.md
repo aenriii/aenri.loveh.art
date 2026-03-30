@@ -567,7 +567,7 @@ did not try to output any sort of html mess with it. luckily the common sense
 of "hmm, this isnt html" won over the save function, and everything worked out
 pretty smoothly.
 
-# act iii / conclusion: what we learned.
+## act iii / conclusion: what we learned.
 
 first of all, contributing to large projects *will* make you feel really cool,
 but its also not that hard. if you can find your own pain point that doesnt
