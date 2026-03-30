@@ -1,1 +1,1 @@
-export const csr = false; // we shouldnt need any client js! maybe once we add lastfm integration
+export const csr = !!import.meta.env.VITE_WRITER_MODE; // we shouldnt need any client js! maybe once we add lastfm integration
